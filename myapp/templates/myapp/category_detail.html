@@ -1,0 +1,23 @@
+{% extends 'myapp/base.html' %}
+
+{% block title %}{{ object.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ object.name }}</h1>
+
+    <h2>Items in this Category:</h2>
+    <ul>
+        {% for item in items %}
+            <li><a href="{% url 'item-detail' item.pk %}">{{ item.name }}</a></li>
+        {% empty %}
+            <p>No items in this category yet.</p>
+        {% endfor %}
+    </ul>
+
+    
+    <a href="{% url 'item-create' %}?category={{ object.pk }}" class="btn btn-primary">Add New Item</a>
+    <a href="{% url 'category-update' object.pk %}" class="btn btn-secondary">Edit Category</a>
+    <a href="{% url 'category-delete' object.pk %}" class="btn btn-danger">Delete Category</a>
+
+{% endblock %}
+

@@ -1,0 +1,160 @@
+/* General Styles */
+html, body {
+    height: 100%; /* Ensures full height for body */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #74ec6f;
+}
+
+/* Main content container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    flex: 1; /* Takes up the available space between header and footer */
+}
+.logo-img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #007bff; /* Optional: Add a border to visually confirm it's there */
+}
+
+.text-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;  /* Ensure the content stays vertically centered */
+    text-align: center;
+
+}
+/* Header */
+.navbar {
+    background-color: #007bff;
+    color: white;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    position: relative; /* Relative to body */
+    flex-shrink: 0; /* Ensures footer stays at the bottom when content is short */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+
+/* Forms */
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+table th {
+    background-color: #007bff;
+    color: rgb(33, 240, 6);
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Item List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f8f9fa;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+ul li a {
+    color: #007bff;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.page-item.disabled .page-link {
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.page-item .page-link {
+    color: #007bff;
+}
+
+.page-item .page-link:hover {
+    color: #0056b3;
+    background-color: #e9ecef;
+    border-color: #dee2e6;
+}
+
+.page-item.active .page-link {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
