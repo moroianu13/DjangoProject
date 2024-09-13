@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xb-l%yb_bi&l5my1%8d9ellx*j&ok!_hcsh(o-*b9pu_e+qud&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['datamaster.pythonanywhere.com']
+ALLOWED_HOSTS = ['datamaster.pythonanywhere.com', 'localhost', '127.0.0.1']
 
 
 # Authentication settings
