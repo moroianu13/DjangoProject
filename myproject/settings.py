@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-xb-l%yb_bi&l5my1%8d9ellx*j&ok!_hcsh(o-*b9pu_e+qud&'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['datamaster.pythonanywhere.com', 'localhost', '127.0.0.1']
 
@@ -124,7 +124,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 # Directory for storing static files in production 
-STATICFILES_DIRS = [BASE_DIR / 'myapp/static']
+STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # Or any other directory of your choice
 
 
