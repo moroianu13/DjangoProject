@@ -9,6 +9,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from .forms import ItemForm , ReviewForm
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
+from django.db import models
+
 
 
 
