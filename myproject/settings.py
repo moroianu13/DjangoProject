@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-xb-l%yb_bi&l5my1%8d9ellx*j&ok!_hcsh(o-*b9pu_e+qud&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['datamaster.pythonanywhere.com']
+
 
 # Authentication settings
 LOGOUT_REDIRECT_URL = 'home'  # Redirect to the home page after logout
